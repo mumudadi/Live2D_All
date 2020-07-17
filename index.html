@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en" onselectstart="return!1"><head><meta charset="utf-8"></head>
+
+<div id="landlord">
+  <div class="message"></div>
+  <canvas id="live2d" width="280" height="375" class="live2d"></canvas>
+  <div class="hide-button">隐藏</div>
+</div>
+
+<div id="spig" class="spig">
+  <div id="message"></div>
+  <div id="xiaomai"></div>
+</div>
+<div class="fixed-xm">
+  <img src="https://cdn.jsdelivr.net/gh/mumudadi/live2dw@latest/xiaomai/xm.png">
+  <audio src="https://cdn.jsdelivr.net/gh/mumudadi/live2dw@latest/xiaomai/xm.mp3" id="xm_audio" preload="auto" style="display:none;"></audio>
+</div>
+<div class="fixed-btn">
+  <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
+</div>
+
+<link rel="stylesheet" href="/live2d/css/xiaomai.css">
+<link rel="stylesheet" href="/live2d/css/live2d.css">
+<script type="text/javascript">
+    var message_Path = '/live2d/'
+    var home_Path = '/'
+</script>
+<script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+<script src="/live2d/js/xiaomai.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mumudadi/live2dw@latest/lib/live2d.js"></script>
+<script type="text/javascript" src="/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/mumudadi/live2dw@latest/assets/live2d-widget-model-shizuku/assets/shizuku.model.json");
+      window.onblur = function (){ 
+             document.title = '快回来学习~'; 
+         };
+         window.onfocus = function (){ 
+             document.title = 'mumu-好少年光芒万丈！'; 
+         }; 
+</script>
+
+
+</body></html>
